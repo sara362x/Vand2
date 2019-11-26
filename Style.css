@@ -7,7 +7,7 @@
 }
 /* angiver all top elementer i wrapper for angivet disse værdier*/
 .Wrapper > * {
-	border: 2px solid #4EADE8;
+	border: 2px solid #D0D0D0;
 	background-color: white;
 	border-radius: 5px;
 	padding: 10px;
@@ -18,7 +18,9 @@ body {
 }
 /*--------------------------------*/
 /* anden fonts til titler der er sat i h1 og h2*/
-h1, h2 {font-family: "balloon-d", sans-serif;}
+h1, h2 {
+	font-family: "balloon-d", sans-serif;
+}
 
 /*------ element angivelse--------*/
 .main-head { 
@@ -51,6 +53,7 @@ h1, h2 {font-family: "balloon-d", sans-serif;}
     "ad"
     "footer";
 }
+
 /* giver vores navagiation flex, så det kan bevægesig fridt */
 nav ul {
   display: flex;
@@ -61,7 +64,9 @@ nav ul {
 }
 
 /* fjerne list type fra vores ankorere */
-nav ul a { list-style: none;}
+nav ul a { 
+	list-style: none;
+}
 
 
 .forsidebillede{width: 60%;
@@ -83,15 +88,16 @@ img {
 */
 a:link, a:visited {
       text-decoration: none;
-      color: #4EADE8;
+      color: #707070;
     }
 
 h1 {
 	text-align: center;
+	color: #707070;
 }
 
 h2 {
-      background-color: #4EADE8;
+      background-color: #707070;
       color: #fff;
       text-align: center;
       margin: 0;
@@ -100,31 +106,27 @@ h2 {
 
 .listing {
       list-style: none;
-      margin: 2em;
+      margin: 0;
       display:grid;
       grid-gap: 30px;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-			margin: 0;
+	
     }
 
-.listing { 
-	list-style: none; 
-}
-
-.listing .fix{
-	border: 1px solid #4EADE8;
+.listing li{
+	border: 1px solid #707070;
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 }
 
-.listing .cta {
+.listing li a {
 	margin-top: auto;
-	border-top: 1px solid #4EADE8;
+	border-top: 1px solid #707070;
 	padding: 10px;
 	text-align: center;}
 
-.listing .body { 
+.listing li p { 
 	padding: 10px;
 }
 
@@ -221,39 +223,26 @@ select {
 ul .title_Pr {text-align: center;}
 .title_li { border: none;text-align: center;}
 
-/*
-.article_content  {
-display: grid;
-grid-gap: 20px;
-grid-template-areas:
-"section1 section2"
-"section3 section4"
-"section5 section6"
-;}*/
 
 
 
-/*
-@media (min-width: 1000px) {
-  .Wrapper{
-  grid-template-columns: 1fr 3fr;
-  grid-template-areas:
-  "nav nav"
-  "content sidebar"
-  "ad"
-  "footer footer";
-  }
-*/
+/***************************DESKTOP***************************/
 @media (min-width: 500px) {
-  #wrapper_forside {
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: 
-      "nav     nav"
-      "text    content"
-      "footer  footer";
-  }
-	  nav ul { /*flexbos. fordeler ordene ud, display in row*/
-    display: flex;
-    justify-content: space-between;
-  }
+.Wrapper {
+	max-width: 1300px;
+}
+	.h1_produkt {
+  grid-row-start: 1;
+  grid-row-end: 2;
+grid-column-start: 1;
+  grid-column-end: 5;
+}
+	.p_produkt {
+  grid-row-start: 2;
+  grid-row-end: 3;
+grid-column-start: 1;
+  grid-column-end: 5;
+}	
+	
+	
 }
