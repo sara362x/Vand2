@@ -14,7 +14,7 @@
 	padding: 10px;
 }
 /* giver bagrunden til hejmmesiden en farve. den er hed nede, for at farven går helt ud til kanten*/
-body {	
+body {
 	background-color: #D0E8EA;
 }
 /*--------------------------------*/
@@ -24,20 +24,20 @@ h1, h2 {
 }
 
 /*------ element angivelse--------*/
-.main-head { 
+.main-head {
 	grid-area: header;
 }
 .article_content {
 	grid-area: content;
 }
-.article_text { 
+.article_text {
 	grid-area: text;
 } 					/*???*/
-.main-nav { 
+.main-nav {
 	grid-area: nav;
 }
 
-.main-footer { 
+.main-footer {
 	grid-area: footer;
 }
 
@@ -47,7 +47,7 @@ h1, h2 {
 .Wrapper {
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: 
+  grid-template-areas:
     "nav"
     "content"
     "text"
@@ -65,7 +65,7 @@ nav ul {
 }
 
 /* fjerne list type fra vores ankorere */
-nav ul a { 
+nav ul a {
 	list-style: none;
 }
 
@@ -112,7 +112,7 @@ h2 {
       display: grid;
       grid-gap: 30px;
       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-	
+
     }
 
 .listing li{
@@ -129,11 +129,11 @@ h2 {
 	text-align: center;
 }
 
-.listing li p { 
+.listing li p {
 	padding: 10px;
 }
 
-.body_text { 
+.body_text {
 	margin: 0;
 	padding: 10px;
 	float: right;
@@ -145,7 +145,7 @@ h2 {
 /***********************Om os *********************************************/
 
 
-.s1 { 
+.s1 {
 	display: grid;
 }
 
@@ -164,7 +164,7 @@ article section {
   padding: 10px;
 }
 
-#wrapper_omso .article section { 
+#wrapper_omso .article section {
 	border: 20px solid #4EADE8;
 }
 
@@ -189,6 +189,29 @@ article section {
 	"section3 section4"
 	"section5 section6";
 }
+.Kontact_h3 {
+display: grid;
+background: #D0E8EA;
+width: 10em;
+padding: 0.2em;
+grid-area: Kontacth3;
+}
+
+
+
+.kontact_Loc_Image {
+display: flex;
+align-content: flex-end;
+grid-area: Kontact_image_placment;
+}
+
+.kontact_section_grid {
+	display: grid;
+	grid-template-areas:
+" Kontacth3 Kontact_image_placment"
+" Textplacement Kontact_image_placment"
+" Textplacement Kontact_image_placment"
+}
 
 
 #email_b input [type=text] {
@@ -203,7 +226,7 @@ select {
   padding: 16px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #f1f1f1; 
+  background-color: #f1f1f1;
 }
 
  select {
@@ -211,7 +234,7 @@ select {
 	  padding: 16px 20px;
 	  border: none;
 	  border-radius: 4px;
-	  background-color: #f1f1f1; 
+	  background-color: #f1f1f1;
 }
 
  input[type=submit] {
@@ -248,15 +271,15 @@ footer a {
 	.h1_produkt {
   grid-row-start: 1;
   grid-row-end: 2;
-grid-column-start: 1;
+	grid-column-start: 1;
   grid-column-end: 4;
 }
 	.p_produkt {
   grid-row-start: 2;
   grid-row-end: 3;
-grid-column-start: 1;
+	grid-column-start: 1;
   grid-column-end: 4;
-}	
+}
 
-	
+
 }
