@@ -90,6 +90,7 @@ img {
 a:link, a:visited {
       text-decoration: none;
       color: #707070;
+	font-size: 1.3em;
     }
 
 h1 {
@@ -168,7 +169,7 @@ article section {
 }
 
 /*class="article_content"*/
-#wrapper_priser .article_content {
+/*#wrapper_priser .article_content {
 	display: grid;
 	grid-gap: 20px;
 	grid-template-areas:
@@ -176,7 +177,7 @@ article section {
 	"section3 section4"
 	"section5 section6";
 }
-
+*/
 
 /* skal måske slettes*/
 
@@ -230,7 +231,10 @@ ul .title_Pr {text-align: center;}
 		max-width: 45%; display: block;
 	float: left;
 	}
-
+/*får iconer i footer til at stå ved siden af hinanden, og ikke under hinanden*/
+footer a {
+	float: left;
+}
 
 /***************************DESKTOP***************************/
 @media (min-width: 500px) {
