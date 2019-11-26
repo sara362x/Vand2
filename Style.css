@@ -1,33 +1,50 @@
 @charset "UTF-8";
 /*---------Wrapper values----------*/
 .Wrapper {
-max-width : 1024px;
-margin: 0 auto;
-font-family: "Jubilat" Jubilat 1.2em;
+	max-width : 1024px;
+	margin: 0 auto;
+	font-family: "Jubilat";
 }
 /* angiver all top elementer i wrapper for angivet disse værdier*/
 .Wrapper > * {
-border: 2px solid #4EADE8;
-border-radius: 5px;
-padding: 10px;
+	border: 2px solid #4EADE8;
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px;
 }
-
-/* giver vores text fonts til titler, og text */
+/* giver bagrunden til hejmmesiden en farve. den er hed nede, for at farven går helt ud til kanten*/
+body {	
+	background-color: #D0E8EA;
+}
+/*--------------------------------*/
+/* anden fonts til titler */
 h1 {font-family: "balloon-d", sans-serif;}
 h2{ font-family: "balloon-d", sans-serif;}
-p {  font-family: "Jubilat";}
 
-/* giver bagrunden til hejmmesiden en farve*/
-body {	background-color: #E2F7FF;}
-/*--------------------------------*/
+
+
+
+
 
 /*------ element angivelse--------*/
-.main-head { grid-area: header;}
-.article_content {grid-area: content;}
-.article_text { grid-area: text;}
-.side { grid-area: nav;}
-.ad { grid-area: ad;}
-.main-footer { grid-area: footer;}
+.main-head { 
+	grid-area: header;
+}
+.article_content {
+	grid-area: content;
+}
+.article_text { 
+	grid-area: text;
+}
+.side { 
+	grid-area: nav;
+}
+.ad { 
+	grid-area: ad;
+}
+.main-footer { 
+	grid-area: footer;
+}
 
 /*--------------------------------*/
 /* giver vores navagiation flex, så det kan bevægesig fridt */
@@ -263,3 +280,11 @@ grid-template-areas:
   "footer footer";
   }
 */
+@media only screen and (min-width: 600px) {
+	
+	
+	
+	
+	
+	
+}
