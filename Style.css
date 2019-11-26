@@ -4,6 +4,7 @@
 	max-width : 1024px;
 	margin: 0 auto;
 	font-family: "Jubilat";
+	font-size: 1.1em;
 }
 /* angiver all top elementer i wrapper for angivet disse værdier*/
 .Wrapper > * {
@@ -97,8 +98,8 @@ h1 {
 }
 
 h2 {
-      background-color: #707070;
-      color: #fff;
+      background-color: #D0E8EA;
+      color: #707070;
       text-align: center;
       margin: 0;
       padding: 10px;
@@ -107,9 +108,9 @@ h2 {
 .listing {
       list-style: none;
       margin: 0;
-      display:grid;
+      display: grid;
       grid-gap: 30px;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 	
     }
 
@@ -124,7 +125,8 @@ h2 {
 	margin-top: auto;
 	border-top: 1px solid #707070;
 	padding: 10px;
-	text-align: center;}
+	text-align: center;
+}
 
 .listing li p { 
 	padding: 10px;
@@ -133,6 +135,7 @@ h2 {
 .body_text { 
 	margin: 0;
 	padding: 10px;
+	float: right;
 }
 
 
@@ -223,7 +226,10 @@ select {
 ul .title_Pr {text-align: center;}
 .title_li { border: none;text-align: center;}
 
-
+.billed {
+		max-width: 45%; display: block;
+	float: left;
+	}
 
 
 /***************************DESKTOP***************************/
@@ -235,14 +241,14 @@ ul .title_Pr {text-align: center;}
   grid-row-start: 1;
   grid-row-end: 2;
 grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 4;
 }
 	.p_produkt {
   grid-row-start: 2;
   grid-row-end: 3;
 grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 4;
 }	
-	
+
 	
 }
