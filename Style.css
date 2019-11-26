@@ -1,35 +1,60 @@
 @charset "UTF-8";
 /*---------Wrapper values----------*/
 .Wrapper {
-max-width : 1024px;
-margin: 0 auto;
-font-family: "Jubilat" Jubilat 1.2em;
+	max-width : 1024px;
+	margin: 0 auto;
+	font-family: "Jubilat";
+	font-size: 1.1em;
 }
 /* angiver all top elementer i wrapper for angivet disse værdier*/
 .Wrapper > * {
-border: 2px solid #4EADE8;
-border-radius: 5px;
-padding: 10px;
+	border: 2px solid #D0D0D0;
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px;
+}
+/* giver bagrunden til hejmmesiden en farve. den er hed nede, for at farven går helt ud til kanten*/
+body {	
+	background-color: #D0E8EA;
+}
+/*--------------------------------*/
+/* anden fonts til titler der er sat i h1 og h2*/
+h1, h2 {
+	font-family: "balloon-d", sans-serif;
 }
 
-/* giver vores text fonts til titler, og text */
-h1 {font-family: "balloon-d", sans-serif;}
-h2{ font-family: "balloon-d", sans-serif;}
-p {  font-family: "Jubilat";}
-
-/* giver bagrunden til hejmmesiden en farve*/
-body {	background-color: #E2F7FF;}
-/*--------------------------------*/
-
 /*------ element angivelse--------*/
-.main-head { grid-area: header;}
-.article_content {grid-area: content;}
-.article_text { grid-area: text;}
-.side { grid-area: nav;}
-.ad { grid-area: ad;}
-.main-footer { grid-area: footer;}
+.main-head { 
+	grid-area: header;
+}
+.article_content {
+	grid-area: content;
+}
+.article_text { 
+	grid-area: text;
+} 					/*???*/
+.main-nav { 
+	grid-area: nav;
+}
+
+.main-footer { 
+	grid-area: footer;
+}
 
 /*--------------------------------*/
+
+/* website rækkefølge/opbyggelse*/
+.Wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 
+    "nav"
+    "content"
+    "text"
+    "ad"
+    "footer";
+}
+
 /* giver vores navagiation flex, så det kan bevægesig fridt */
 nav ul {
   display: flex;
@@ -40,18 +65,8 @@ nav ul {
 }
 
 /* fjerne list type fra vores ankorere */
-nav ul a { list-style: none;}
-
-/* website opbuggelse */
-#wrapper_forside{
-display: grid;
-grid-gap: 20px;
-grid-template-areas:
-"nav"
-"content"
-"text"
-"ad"
-"footer";
+nav ul a { 
+	list-style: none;
 }
 
 
@@ -61,37 +76,31 @@ grid-template-areas:
   margin-right: auto;}
 
 /********** priser opbyggelse ************/
-#wrapper_priser {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-  "nav"
-  "content"
-  "text"
-  "ad"
-  "footer";
+
+* {
+	box-sizing: border-box;
 }
 
-
-
-
-
-* {box-sizing: border-box;}
-
-img {max-width: 100%; display: block;}
+img {
+	max-width: 100%; display: block;
+}
 
 /*body {font: 1.2em Helvetica, arial, sans-serif;}
 */
 a:link, a:visited {
       text-decoration: none;
-      color: #4EADE8;
+      color: #707070;
+	font-size: 1.3em;
     }
 
-h1 {text-align: center;}
+h1 {
+	text-align: center;
+	color: #707070;
+}
 
 h2 {
-      background-color: #4EADE8;
-      color: #fff;
+      background-color: #D0E8EA;
+      color: #707070;
       text-align: center;
       margin: 0;
       padding: 10px;
@@ -99,65 +108,46 @@ h2 {
 
 .listing {
       list-style: none;
-      margin: 2em;
-      display:grid;
+      margin: 0;
+      display: grid;
       grid-gap: 30px;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-			margin: 0;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	
     }
 
-.listing { list-style: none; }
-
-.listing .fix{
-border: 1px solid #4EADE8;
-border-radius: 5px;
-display: flex;
-flex-direction: column;
+.listing li{
+	border: 1px solid #707070;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
 }
 
-.listing .cta {
-margin-top: auto;
-border-top: 1px solid #4EADE8;
-padding: 10px;
-text-align: center;}
+.listing li a {
+	margin-top: auto;
+	border-top: 1px solid #707070;
+	padding: 10px;
+	text-align: center;
+}
 
-.listing .body { padding: 10px;}
+.listing li p { 
+	padding: 10px;
+}
 
-.body_text { margin: 0;
-						 padding: 10px;}
-
+.body_text { 
+	margin: 0;
+	padding: 10px;
+	float: right;
+}
 
 
 /***************kontact*********************************/
-#wrapper_kontact {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-  "nav"
-  "content"
-  "text"
-  "ad"
-  "footer";
 
-}
 /***********************Om os *********************************************/
-#wrapper_omso {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-  "nav"
-  "content"
-  "text"
-  "ad"
-  "footer";
+
+
+.s1 { 
+	display: grid;
 }
-
-
-
-
-
-
-.s1 { display: grid;}
 
 .center {
   display: block;
@@ -171,34 +161,34 @@ article section {
   border: 20px solid #FFFFFF;
   /*background-color: #ffec99;*/
   border-radius: 5px; /* gør borderens højrner mere runde*/
-  padding: 10px;}
-
-#wrapper_omso .article section { border: 20px solid #4EADE8;}
-
-
-/*class="article_content"*/
-#wrapper_priser .article_content {display: grid;
-grid-gap: 20px;
-grid-template-areas:
-"section1 section2"
-"section3 section4"
-"section5 section6";
+  padding: 10px;
 }
 
+#wrapper_omso .article section { 
+	border: 20px solid #4EADE8;
+}
+
+/*class="article_content"*/
+/*#wrapper_priser .article_content {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+	"section1 section2"
+	"section3 section4"
+	"section5 section6";
+}
+*/
 
 /* skal måske slettes*/
 
 #wrapper_kontact .article_content {
-display: grid;
-grid-gap: 20px;
-grid-template-areas:
-"section1 section2"
-"section3 section4"
-"section5 section6";
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+	"section1 section2"
+	"section3 section4"
+	"section5 section6";
 }
-
-
-
 
 
 #email_b input [type=text] {
@@ -208,23 +198,21 @@ grid-template-areas:
 	  background-repeat: no-repeat;
 	}
 
-
-
 select {
   width: 100%;
   padding: 16px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #f1f1f1; }
-
+  background-color: #f1f1f1; 
+}
 
  select {
 	  width: 40%;
 	  padding: 16px 20px;
 	  border: none;
 	  border-radius: 4px;
-	  background-color: #f1f1f1; }
-
+	  background-color: #f1f1f1; 
+}
 
  input[type=submit] {
   background-color: #4CAF50;
@@ -236,30 +224,35 @@ select {
   cursor: pointer;
 }
 
-
 ul .title_Pr {text-align: center;}
 .title_li { border: none;text-align: center;}
 
-/*
-.article_content  {
-display: grid;
-grid-gap: 20px;
-grid-template-areas:
-"section1 section2"
-"section3 section4"
-"section5 section6"
-;}*/
+.billed {
+		max-width: 45%; display: block;
+	float: left;
+	}
+/*får iconer i footer til at stå ved siden af hinanden, og ikke under hinanden*/
+footer a {
+	float: left;
+}
 
+/***************************DESKTOP***************************/
+@media (min-width: 500px) {
+.Wrapper {
+	max-width: 1300px;
+}
+	.h1_produkt {
+  grid-row-start: 1;
+  grid-row-end: 2;
+grid-column-start: 1;
+  grid-column-end: 4;
+}
+	.p_produkt {
+  grid-row-start: 2;
+  grid-row-end: 3;
+grid-column-start: 1;
+  grid-column-end: 4;
+}	
 
-
-/*
-@media (min-width: 1000px) {
-  .Wrapper{
-  grid-template-columns: 1fr 3fr;
-  grid-template-areas:
-  "nav nav"
-  "content sidebar"
-  "ad"
-  "footer footer";
-  }
-*/
+	
+}
