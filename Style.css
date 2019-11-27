@@ -167,6 +167,31 @@ p  { background-color: #ffffff;
 	float: right;
 }
 
+/*dette er hver produkt billed. sat som baggrund for at der kunne komme tekst over*/
+#example1 {
+  background-image: url("Sites/Billeder/produkt1.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+  padding: 15px;
+}
+#example2 {
+  background-image: url("Sites/Billeder/produkt2.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+  padding: 15px;
+}
+#example3 {
+  background-image: url("Sites/Billeder/skål.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+  padding: 15px;
+}
+#example4 {
+  background-image: url("Sites/Billeder/godbid.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+  padding: 15px;
+}
 
 /***************kontact*********************************/
 
@@ -278,10 +303,6 @@ select {
 ul .title_Pr {text-align: center;}
 .title_li { border: none;text-align: center;}
 
-.billed {
-		max-width: 45%; display: block;
-	float: left;
-	}
 
 .center {
 	text-align: center;
