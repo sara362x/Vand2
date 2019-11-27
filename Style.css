@@ -14,9 +14,10 @@
 	padding: 10px;
 }
 /* giver bagrunden til hejmmesiden en farve. den er hed nede, for at farven går helt ud til kanten*/
-body {	
+body {
 	background-color: #D0E8EA;
 }
+
 /*--------------------------------*/
 /* anden fonts til titler der er sat i h1 og h2*/
 h1, h2 {
@@ -24,20 +25,20 @@ h1, h2 {
 }
 
 /*------ element angivelse--------*/
-.main-head { 
+.main-head {
 	grid-area: header;
 }
 .article_content {
 	grid-area: content;
 }
-.article_text { 
+.article_text {
 	grid-area: text;
 } 					/*???*/
-.main-nav { 
+.main-nav {
 	grid-area: nav;
 }
 
-.main-footer { 
+.main-footer {
 	grid-area: footer;
 }
 
@@ -47,7 +48,7 @@ h1, h2 {
 .Wrapper {
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: 
+  grid-template-areas:
     "nav"
     "content"
     "text"
@@ -65,15 +66,26 @@ nav ul {
 }
 
 /* fjerne list type fra vores ankorere */
-nav ul a { 
+nav ul a {
 	list-style: none;
 }
 
 
-.forsidebillede{width: 60%;
+.forsidebillede{width: 30%;
 	display: block;
-  margin-left: auto;
-  margin-right: auto;}
+	  margin-left: auto;
+	  margin-right: auto;}
+
+.forside1 {width: 30% }
+
+.forside2 {width: 30%}
+
+.forside3 {width: 30%}
+
+.facebooklogo {width: 5%}
+
+.instalogo {width: 10%}
+
 
 /********** priser opbyggelse ************/
 
@@ -82,7 +94,7 @@ nav ul a {
 }
 
 img {
-	max-width: 100%; display: block;
+	max-width: 100%; border-radius: 20%;
 }
 
 /*body {font: 1.2em Helvetica, arial, sans-serif;}
@@ -99,20 +111,36 @@ h1 {
 }
 
 h2 {
+
       background-color: #D0E8EA;
       color: #707070;
       text-align: center;
       margin: 0;
       padding: 10px;
+	font-family: "Avenir Next Regular"
     }
+
+h3  { background-color: #ffffff;
+    color: #7f828c;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+	}	
+p  { background-color: #ffffff;
+    color: #7f828c;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+	}	
 
 .listing {
       list-style: none;
       margin: 0;
       display: grid;
       grid-gap: 30px;
+
       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-	
+
     }
 
 .listing li{
@@ -129,11 +157,11 @@ h2 {
 	text-align: center;
 }
 
-.listing li p { 
+.listing li p {
 	padding: 10px;
 }
 
-.body_text { 
+.body_text {
 	margin: 0;
 	padding: 10px;
 	float: right;
@@ -170,7 +198,7 @@ h2 {
 /***********************Om os *********************************************/
 
 
-.s1 { 
+.s1 {
 	display: grid;
 }
 
@@ -189,7 +217,7 @@ article section {
   padding: 10px;
 }
 
-#wrapper_omso .article section { 
+#wrapper_omso .article section {
 	border: 20px solid #4EADE8;
 }
 
@@ -214,6 +242,29 @@ article section {
 	"section3 section4"
 	"section5 section6";
 }
+.Kontact_h3 {
+display: grid;
+background: #D0E8EA;
+width: 10em;
+padding: 0.2em;
+grid-area: Kontacth3;
+}
+
+
+
+.kontact_Loc_Image {
+display: flex;
+align-content: flex-end;
+grid-area: Kontact_image_placment;
+}
+
+.kontact_section_grid {
+	display: grid;
+	grid-template-areas:
+" Kontacth3 Kontact_image_placment"
+" Textplacement Kontact_image_placment"
+" Textplacement Kontact_image_placment"
+}
 
 
 #email_b input [type=text] {
@@ -228,7 +279,7 @@ select {
   padding: 16px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #f1f1f1; 
+  background-color: #f1f1f1;
 }
 
  select {
@@ -236,7 +287,7 @@ select {
 	  padding: 16px 20px;
 	  border: none;
 	  border-radius: 4px;
-	  background-color: #f1f1f1; 
+	  background-color: #f1f1f1;
 }
 
  input[type=submit] {
@@ -269,15 +320,15 @@ footer a {
 	.h1_produkt {
   grid-row-start: 1;
   grid-row-end: 2;
-grid-column-start: 1;
+	grid-column-start: 1;
   grid-column-end: 4;
 }
 	.p_produkt {
   grid-row-start: 2;
   grid-row-end: 3;
-grid-column-start: 1;
+	grid-column-start: 1;
   grid-column-end: 4;
-}	
+}
 
-	
+
 }
