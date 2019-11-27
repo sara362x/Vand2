@@ -74,19 +74,13 @@ nav ul a {
 .forsidebillede{width: 30%;
 	display: block;
 	  margin-left: auto;
-	  margin-right: auto;}
-
-.forside1 {width: 30% }
+	  margin-right: auto;
+}
+.forside1 {width: 30%;}
 
 .forside2 {width: 30%}
 
 .forside3 {width: 30%}
-
-.facebooklogo {width: 5%}
-
-.instalogo {width: 10%}
-
-
 /********** priser opbyggelse ************/
 
 * {
@@ -96,6 +90,8 @@ nav ul a {
 img {
 	max-width: 100%; border-radius: 20%;
 }
+
+
 
 a:link, a:visited {
       text-decoration: none;
