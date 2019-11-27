@@ -13,12 +13,12 @@ padding: 10px;
 }
 
 /* giver vores text fonts til titler, og text */
-h1 {font-family: "balloon-d", sans-serif;}
-h2{ font-family: "balloon-d", sans-serif;}
-p {  font-family: "Jubilat";}
+h1 {font-family: 'Avenir Next Regular';}
+h3 { font-family: 'Avenir Next Ultra Light';}
+p { font-family: 'Avenir Light';}
 
 /* giver bagrunden til hejmmesiden en farve*/
-body {	background-color: #E2F7FF;}
+body {	background-color: #ffffff;}
 /*--------------------------------*/
 
 /*------ element angivelse--------*/
@@ -55,10 +55,21 @@ grid-template-areas:
 }
 
 
-.forsidebillede{width: 60%;
+.forsidebillede{width: 30%;
 	display: block;
-  margin-left: auto;
-  margin-right: auto;}
+	  margin-left: auto;
+	  margin-right: auto;}
+
+.forside1 {width: 30% }
+
+.forside2 {width: 30%}
+
+.forside3 {width: 30%}
+
+.facebooklogo {width: 5%}
+
+.instalogo {width: 10%}
+
 
 /********** priser opbyggelse ************/
 #wrapper_priser {
@@ -78,7 +89,7 @@ grid-template-areas:
 
 * {box-sizing: border-box;}
 
-img {max-width: 100%; display: block;}
+img {max-width: 100%; border-radius: 20%;}
 
 /*body {font: 1.2em Helvetica, arial, sans-serif;}
 */
@@ -90,12 +101,26 @@ a:link, a:visited {
 h1 {text-align: center;}
 
 h2 {
-      background-color: #4EADE8;
-      color: #fff;
+      background-color: #ffffff;
+      color: #7f828c;
       text-align: center;
       margin: 0;
       padding: 10px;
+	font-family: "Avenir Next Regular"
     }
+
+h3  { background-color: #ffffff;
+    color: #7f828c;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+	}	
+p  { background-color: #ffffff;
+    color: #7f828c;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+	}	
 
 .listing {
       list-style: none;
@@ -103,8 +128,8 @@ h2 {
       display:grid;
       grid-gap: 30px;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-			margin: 0;
-    }
+		
+	}	
 
 .listing { list-style: none; }
 
