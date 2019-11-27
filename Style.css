@@ -3,7 +3,7 @@
 .Wrapper {
 	max-width : 1024px;
 	margin: 0 auto;
-	font-family: "Jubilat";
+	font-family: "Jubilat" ;
 	font-size: 1.1em;
 }
 /* angiver all top elementer i wrapper for angivet disse værdier*/
@@ -97,8 +97,6 @@ img {
 	max-width: 100%; border-radius: 20%;
 }
 
-/*body {font: 1.2em Helvetica, arial, sans-serif;}
-*/
 a:link, a:visited {
       text-decoration: none;
       color: #707070;
@@ -117,16 +115,15 @@ h2 {
       text-align: center;
       margin: 0;
       padding: 10px;
-	font-family: "Avenir Next Regular"
     }
 
-h3  { background-color: #ffffff;
+h3  { 
     color: #7f828c;
     text-align: center;
     margin: 0;
     padding: 10px;
 	}	
-p  { background-color: #ffffff;
+p  { 
     color: #7f828c;
     text-align: center;
     margin: 0;
@@ -155,6 +152,7 @@ p  { background-color: #ffffff;
 	border-top: 1px solid #707070;
 	padding: 10px;
 	text-align: center;
+	background-color: #D0E8EA;
 }
 
 .listing li p {
@@ -166,6 +164,8 @@ p  { background-color: #ffffff;
 	padding: 10px;
 	float: right;
 }
+
+
 
 /*dette er hver produkt billed. sat som baggrund for at der kunne komme tekst over*/
 #example1 {
