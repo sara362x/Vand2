@@ -177,12 +177,24 @@ p  {
   padding: 15px;
 }
 #example3 {
-  background-image: url("Sites/Billeder/skål.jpg");
+  background-image: url("Sites/Billeder/produkt1.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
   padding: 15px;
 }
 #example4 {
+  background-image: url("Sites/Billeder/produkt1.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+  padding: 15px;
+}
+#example5 {
+  background-image: url("Sites/Billeder/skål.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+  padding: 15px;
+}
+#example6 {
   background-image: url("Sites/Billeder/godbid.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
